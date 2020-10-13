@@ -51,7 +51,7 @@ const cardsArray = [{
 
 const gameGrid = cardsArray
     .concat(cardsArray)
-    /*.sort(() => 0.5 - Math.random());*/
+    .sort(() => 0.5 - Math.random());
 
 let firstGuess = '';
 let secondGuess = '';
