@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: #6589F9;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  background: #FAB942 url('img/questions.png') no-repeat center center / contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #6589F9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: #6589F9 !important;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scoreboard{
+  margin-left: 25px;
+  font-size: 28px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.endgame {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #97deb0c4;
+}
+
+.endgame h1 {
+    color: #Fff;
+    font-size: 48px;
+}
+
+.endgame button {
+    background-color: #ffa542;
+    color: #FFF;
+    border: none;
+    padding: 12px 60px;
+    font-size: 16px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.endgame button:hover {
+    background-color: #e75a10;
+    color: #FFF;
+}
+
+@media (max-width:1000px) {
+    .card,
+    .back,
+    .front {
+    height: 85px;
+    width: 85px;
+    }
+}
