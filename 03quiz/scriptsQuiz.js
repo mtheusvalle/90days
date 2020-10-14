@@ -45,7 +45,7 @@
                 }, 600);
 
             if(score == 10){
-                $('#score').html('<h1 style="text-align:center;">QUE INCRÍVEL!!!, <br>Você ama mesmo uma série em...<br>Você acertou: ' + score + ' de 10 perguntas!</h1>');
+                $('#score').html('<h1 style="text-align:center;">QUE INCRÍVEL!!! <br>Você ama mesmo uma série em...<br>Você acertou: ' + score + ' de 10 perguntas!</h1>');
             }else if(score >= 6){
                 $('#score').html('<h1 style="text-align:center;">Parábens, você gosta mesmo de uma série<br>Você acertou: ' + score + ' de 10 perguntas!</h1>');
             }else {
