@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <title>Quiz Netflix</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="scriptsQuiz.js"></script>
+
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="questions-count" style="display: none;">
+            <ul class="count">
+                <li data-id="0">1</li>
+                <li data-id="1">2</li>
+                <li data-id="2">3</li>
+                <li data-id="3">4</li>
+                <li data-id="4">5</li>  
+                <li data-id="5">6</li>  
+                <li data-id="6">7</li>  
+                <li data-id="7">8</li>  
+                <li data-id="8">9</li>  
+                <li data-id="9">10</li>  
+            </ul>
+        </div>
+        
+        <section class="question-wrapper" data-question="0" style="display: block;">
+            <p class="question">
+                <img src="img/00.jpg">
+            </p>
+            <h1>Você conhece as séries da Netflix?</h1>
+            <div class="btn" style="text-align: center;">
+                <button class="btn-Quiz" id="openQuiz">Iniciar o Quiz</button>
+            </div>
+        </section>
+
+        <section class="question-wrapper" data-question="1" style="display: none;">
+            <p class="question">
+                <img src="img/01.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="0">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Brooklin 99</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Stranger Things</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">Braking Bad</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Black Mirror</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="2" style="display: none;">
+            <p class="question">
+                <img src="img/02.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="3">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Rick Morty</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Bojack Horseman</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">Stranger Things</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Braking Bad</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="question-wrapper" data-question="3" style="display: none;">
+            <p class="question">
+                <img src="img/03.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="1">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Maquina Mortifera</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Stanger Things</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">Boing 808</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Bojack Horseman</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="4" style="display: none;">
+            <p class="question">
+                <img src="img/04.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="1">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Peaky Blinders</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Bojack Horseman</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">Atlanta</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Riverdale</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="5" style="display: none;">
+            <p class="question">
+                <img src="img/05.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="2">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Riverdale</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Atlanta</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">Rick e Morty</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Suits</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="6" style="display: none;">
+            <p class="question">
+                <img src="img/06.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="0">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">f.r.i.e.n.d.s</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Em Ritimo De Fuga</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">Riverdale</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">O Resgate Do Soldado Ryan</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="7" style="display: none;">
+            <p class="question">
+                <img src="img/07.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="3">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Frontier</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Ragnarok</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">The last Kingdom</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Vikings</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="8" style="display: none;">
+            <p class="question">
+                <img src="img/08.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="3">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Lucifer</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Teen Wolf</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">A Ordem</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Ponto Cego</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="9" style="display: none;">
+            <p class="question">
+                <img src="img/09.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="2">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">The I-Land</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">The Rain</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">The 100</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">The Society</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="10" style="display: none;">
+            <p class="question">
+                <img src="img/10.jpg">
+            </p>
+            <ul class="alternatives" data-alternatives="1">
+                <li class="alternative-wrapper" data-alternative="0">
+                    <p class="alternative">Gossip Girl</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="1">
+                    <p class="alternative">Grey's Anatomy</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="2">
+                    <p class="alternative">Glee</p>
+                </li>
+                <li class="alternative-wrapper" data-alternative="3">
+                    <p class="alternative">Teen Wolf</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="question-wrapper" data-question="11" style="display: none;">
+            <p class="question">
+                <img src="img/00.jpg">
+            </p>
+            <div id="score" style="text-align: center;"></div>
+        </section>
+
+    </div>
+</body>
+</html>
