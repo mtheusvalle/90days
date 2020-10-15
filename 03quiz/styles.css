@@ -101,8 +101,7 @@ body {
 }
 .social {
     display: flex;
-    position: absolute;
-    bottom: 1em;
+    margin-bottom: 10px;
 }
 
 @import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
@@ -175,7 +174,7 @@ body {
           transform: scale(1);
 }
 .social-btns {
-  height: 50px;
+  height: auto;
   margin: auto;
   font-size: 0;
   text-align: center;
@@ -185,18 +184,18 @@ body {
   right: 0;
 }
 .social-btns .btn {
-  display: inline-block;
-  background-color: #fff;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  margin: 0 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 28%;
-  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
-  opacity: 0.99;
+    display: inline-block;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: -2px -2px 15px -5px rgb(0 0 0 / 40%);
+    opacity: 0.99;
 }
 .social-btns .btn:before {
   content: '';
@@ -212,6 +211,7 @@ body {
 }
 .created {
     font-size: 16px;
-    color: #ccc;
-    margin: 7px 0;
+    color: #969696;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
