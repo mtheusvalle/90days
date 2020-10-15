@@ -210,3 +210,8 @@ body {
   font-size: 38px;
   vertical-align: middle;
 }
+.created {
+    font-size: 16px;
+    color: #ccc;
+    margin: 7px 0;
+}
