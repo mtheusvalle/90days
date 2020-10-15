@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <title>Quiz Netflix</title>
 
@@ -13,6 +17,7 @@
     <script src="scriptsQuiz.js"></script>
 
 </head>
+
 <body>
     <div class="quiz-container" id="quiz">
         <div class="questions-count" style="display: none;">
@@ -21,18 +26,18 @@
                 <li data-id="1">2</li>
                 <li data-id="2">3</li>
                 <li data-id="3">4</li>
-                <li data-id="4">5</li>  
-                <li data-id="5">6</li>  
-                <li data-id="6">7</li>  
-                <li data-id="7">8</li>  
-                <li data-id="8">9</li>  
-                <li data-id="9">10</li>  
+                <li data-id="4">5</li>
+                <li data-id="5">6</li>
+                <li data-id="6">7</li>
+                <li data-id="7">8</li>
+                <li data-id="8">9</li>
+                <li data-id="9">10</li>
             </ul>
         </div>
-        
+
         <section class="question-wrapper" data-question="0" style="display: block;">
             <p class="question">
-                <img src="img/00.jpg">
+                <img style="border-radius: 10px 10px 0 0;" src="img/00.jpg">
             </p>
             <h1>Você conhece as séries da Netflix?</h1>
             <div class="btn" style="text-align: center;">
@@ -79,7 +84,7 @@
                 </li>
             </ul>
         </section>
-        
+
         <section class="question-wrapper" data-question="3" style="display: none;">
             <p class="question">
                 <img src="img/03.jpg">
@@ -242,12 +247,24 @@
 
         <section class="question-wrapper" data-question="11" style="display: none;">
             <p class="question">
-                <img src="img/00.jpg">
+                <img style="border-radius: 10px 10px 0 0;" src="img/00.jpg">
             </p>
             <div id="score" style="text-align: center;"></div>
             <button class="btn-Quiz" onclick="location.reload()">Jogar Novamente!</button>
         </section>
 
     </div>
+
+    <div class="social">
+        <div class="social-btns">
+            <a class="btn facebook" href="https://www.facebook.com/matheus.dovallemaciel/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="btn twitter" href="https://twitter.com/Xypvalle" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="btn linkedin" href="https://www.linkedin.com/in/matheus-valle-3257021a9/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            <a class="btn instagram" href="https://www.instagram.com/mtheus_valle/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a class="btn github" href="https://github.com/mtheusvalle" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+    
 </body>
+
 </html>
