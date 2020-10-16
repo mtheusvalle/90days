@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+
+    <title>Pedra, papel e tesoura</title>
+</head>
+<body class="container">
+    <div class="title">
+        <h1>Pedra, papel e tesoura</h1>
+    </div>
+    <div class="score">
+        <div class="humanScore">
+            <h2>Human</h2>
+            <p id="scoreHuman">0</p>
+        </div>
+        <div class="computerScore">
+            <h2>Computer</h2>
+            <p id="scoreComputer">0</p>
+        </div>
+    </div>
+    <div class="game">
+        <div class="player">
+            <button id="select-1" onclick="play(1)"><img src="img/01.png"></button>
+            <button id="select-2" onclick="play(2)"><img src="img/03.png"></button>
+            <button id="select-3" onclick="play(3)"><img src="img/02.png"></button>
+        </div>
+        
+        <div class="computer">
+            <button id="rock"><img src="img/01.png"></button>
+            <button id="paper"><img src="img/03.png"></button>
+            <button id="scissors"><img src="img/02.png"></button>
+        </div>
+    </div>
+    <div class="message">
+            <h3 id="messageText">Vamos jogar!!!</h3>
+    </div>
+</body>
+</html>

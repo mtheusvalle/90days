@@ -1,0 +1,113 @@
+body, html {
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 910px;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+@media (max-width: 991px) {
+    .game {
+        display: block;
+    }
+    .player {
+        margin-bottom: 15px;
+    }
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.computerScore{
+    text-align: center;
+}
+
+.humanScore{
+    text-align: center;
+}
+
+.player {
+    display: flex;
+    background-color: #6dafda;
+    padding: 10px 15px;
+    justify-content: center;
+}
+
+.player button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.player button img {
+    width: 6em;
+    display: flex;
+    opacity: 0.6;
+}
+
+.player button img:hover {
+    opacity: 1;
+}
+
+.computer {
+    display: flex;
+    background-color: #c50e0e;
+    padding: 10px 15px;
+    justify-content: center;
+}
+
+.computer button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.computer button img {
+    width: 6em;
+    display: flex;
+    opacity: 0.6;
+}
+.computer button.winner img {
+    opacity: 1;
+}
+
+#scoreComputer, #scoreHuman {
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+.player button{
+    outline: none;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.message h3 {
+    background-color: #1350ce;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+}
