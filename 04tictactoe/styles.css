@@ -1,0 +1,32 @@
+html, body {
+    margin-top: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  canvas {
+    display: block;
+    text-align: center;
+  }
+
+  .result {
+    position: absolute;
+    background-color: #000c;
+    padding: 20px 100px;
+    color: #FFF;
+    text-align: center;
+  }
+
+  .result h1{
+    font-size: 36px;
+  }
+  #reset {
+    border: 0;
+    background-color: #FFF;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
