@@ -99,6 +99,8 @@ body {
 .alternatives p {
     margin: 0;
 }
+
+/*SOCIAL*/
 .social {
     display: flex;
     margin-bottom: 10px;
