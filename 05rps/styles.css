@@ -86,7 +86,7 @@ body, html {
     opacity: 1;
 }
 
-#scoreComputer, #scoreHuman {
+.humanScore p, .computerScore p {
     margin: 10px 0;
     font-size: 26px;
     font-weight: bold;
