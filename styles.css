@@ -1,6 +1,6 @@
 body {
   background-color: #4a4a4a;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
 }
 
 .init h1, .init p{
@@ -31,61 +31,61 @@ body {
 }
 
 @import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
-.social-btns .btn,
-.social-btns .btn:before,
-.social-btns .btn .fa {
+.social-btns .btn-social-social,
+.social-btns .btn-social:before,
+.social-btns .btn-social .fa {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
   -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
           transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
-.social-btns .btn:before {
+.social-btns .btn-social:before {
   top: 90%;
   left: -110%;
 }
-.social-btns .btn .fa {
+.social-btns .btn-social .fa {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
-.social-btns .btn.facebook:before {
+.social-btns .btn-social.facebook:before {
   background-color: #3b5998;
 }
-.social-btns .btn.facebook .fa {
+.social-btns .btn-social.facebook .fa {
   color: #3b5998;
 }
-.social-btns .btn.twitter:before {
+.social-btns .btn-social.twitter:before {
   background-color: #3cf;
 }
-.social-btns .btn.twitter .fa {
+.social-btns .btn-social.twitter .fa {
   color: #3cf;
 }
-.social-btns .btn.linkedin:before {
+.social-btns .btn-social.linkedin:before {
   background-color:#0077b5;
 }
-.social-btns .btn.linkedin .fa {
+.social-btns .btn-social.linkedin .fa {
   color: #0077b5;
 }
-.social-btns .btn.instagram:before {
+.social-btns .btn-social.instagram:before {
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
-.social-btns .btn.instagram .fa {
+.social-btns .btn-social.instagram .fa {
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.social-btns .btn.github:before {
+.social-btns .btn-social.github:before {
   background-color: #000;
 }
-.social-btns .btn.github .fa {
+.social-btns .btn-social.github .fa {
   color: #000;
 }
-.social-btns .btn:focus:before,
-.social-btns .btn:hover:before {
+.social-btns .btn-social:focus:before,
+.social-btns .btn-social:hover:before {
   top: -10%;
   left: -10%;
 }
-.social-btns .btn:focus .fa-instagram,
-.social-btns .btn:hover .fa-instagram {
+.social-btns .btn-social:focus .fa-instagram,
+.social-btns .btn-social:hover .fa-instagram {
     color: #fff;
     background: #FFF;
     -webkit-background-clip: text;
@@ -93,8 +93,8 @@ body {
     -webkit-transform: scale(1);
             transform: scale(1);
 }
-.social-btns .btn:focus .fa,
-.social-btns .btn:hover .fa {
+.social-btns .btn-social:focus .fa,
+.social-btns .btn-social:hover .fa {
   color: #fff;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -109,7 +109,7 @@ body {
   left: 0;
   right: 0;
 }
-.social-btns .btn {
+.social-btns .btn-social {
     display: inline-block;
     background-color: #fff;
     width: 45px;
@@ -123,7 +123,7 @@ body {
     box-shadow: -2px -2px 15px -5px rgb(0 0 0 / 40%);
     opacity: 0.99;
 }
-.social-btns .btn:before {
+.social-btns .btn-social:before {
   content: '';
   width: 120%;
   height: 120%;
@@ -131,7 +131,7 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.social-btns .btn .fa {
+.social-btns .btn-social .fa {
   font-size: 38px;
   vertical-align: middle;
 }
@@ -514,6 +514,7 @@ body {
 .hs__headline {
   -webkit-box-flex: 1;
           flex: 1;
+          color: #FFF;
 }
 .hs__arrows {
   align-self: center;
@@ -552,8 +553,6 @@ body {
   margin: 10px;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
